@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* justify-items: center; */
+        }
+        #container{
+            width: 720px;
+            position: relative;
+            top: 0;
+            left: 400px;
+            background-color: beige;
+            padding: 7px;
+            padding-left: 15px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        #jam h1{
+font-size: 22px;
+color: rgb(1, 1, 26);
+
+        }
+        label{
+            padding: 12px 3px 12px 0;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #sname{
+            width: 65%;
+            padding: 2px;
+        }
+        #mname{
+            width: 77%;
+            padding: 2px;
+        }
+        #fname{
+            width: 81%;
+            padding: 2px;
+        }
+        #dob{
+            width: 35%;
+            padding: 2px; 
+        }
+        #sex{
+            width: 35%;
+            padding: 2px; 
+        }
+        #disa{
+            width: 28%;
+            padding: 2px;
+        }
+        #mstatus{
+            width: 33%;
+            padding: 2px;
+        }
+        #paddress{
+            width: 75%;
+            padding: 2px; 
+        }
+        #atown{
+            width: 27%;
+            padding: 2px;  
+        }
+        #scountry{
+            width: 28%;
+            padding: 2px;  
+        }
+        #email{
+            width: 33%;
+            padding: 2px;  
+        }
+        #mnumber{
+            width: 33%;
+            padding: 2px;
+        }
+        #nationality{
+            width: 17%;
+            padding: 2px; 
+        }
+        #sorigin{
+            width: 17%;
+            padding: 2px; 
+        }
+        #lga{
+            width: 18%;
+            padding: 2px; 
+        }
+        #sexam{
+            width: 25%;
+            padding: 2px;
+        }
+        #etown{
+            width: 26%;
+            padding: 2px;
+        }
+        #sub{
+            /* text-align: center; */
+            width: 80px;
+            border: none;
+            background-color: burlywood;
+            padding: 10px;
+            border-radius: 5px;
+            color: rgb(1, 1, 12);
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 1px 1px 11px 2px rgb(119, 206, 209);
+            position: relative;
+            top: 0;
+            left: 300px;
+        }
+        /* div{
+            padding: 12px 12px 12px 0;
+            display: inline-block; 
+        } */
+    </style>
+</head>
+<body>
+    <div id="container"> 
+    <div id="jam">
+        <h1><img src="jambimages/jamb logo.png" style="width: 40px;margin-top: 10px;" > UTME REGISTRATION FORM SAMPLE TEMPLATE</h1>
+    </div>
+    <form action="#">
+        <div><label for="surname">Surname(Family Name):</label><input type="text" id="sname" required></div>
+
+        <div><label for="middle name">Middle Name:</label><input type="text" id="mname" required></div>
+
+        <div><label for="first name">First name:</label><input type="text" id="fname" required></div>
+
+        <div><label for="date of birth">Date of Birth:</label><input type="number" placeholder="Day/Month/Year" id="dob" required>
+
+        <label for="sex">Sex:</label><input type="text" placeholder="Male/Female" id="sex" required></div>
+
+        <!-- <h4>Day/Month/Year</h4> <h4>Day/Month/Year</h4> -->
+        <div><label for="disabilities">Disabilities:</label><input type="text" placeholder="Blind/Deaf/Physical Handicap/None" id="disa" required>
+            <label for="marital status">Marital Status:</label><input type="text" placeholder="Single/Married/Divorce" id="mstatus" required>
+        </div>
+
+        
+        <div><label for="Postal Address">Postal Address:</label><input type="text" id="paddress" required></div>
+        <div>
+            <label for="Address Town">Address Town:</label><input type="text" id="atown" required>
+            <label for="State & Country">State & Country:</label><input type="text" id="scountry" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label><input type="text" id="email" required>
+            <label for="mobile number">Mobile Number:</label><input type="text" id="mnumber" required>
+        </div>
+
+        <div>
+            <label for="nationality">Nationality:</label><input type="text" id="nationality" required>
+            <label for="stateoforigin">State of Origin:</label><input type="text" id="sorigin" required>
+            <label for="lga">L.G.A:</label><input type="text" id="lga" required>
+        </div>
+
+        <div>
+            <label for="preferrd state of exam">Preferrd State of Exam:</label><input type="text" id="sexam" required>
+            <label for="exam town">Exam Town:</label><input type="text" id="etown" required>
+        </div>
+
+        <div><button id="sub">Submit</button></div>
+           <div id="info"></div>
+
+    </form>
+    </div>
+
+
+//QUESTION: DESIGN JAMB REGISTRATION FORM TEMPLATE AND DISPLAY THE RECORDS 
+    <script>
+   // alert("kkkk");
+function Janbregistrater(sname,mname,fname,dob,sex,disa,mstatus,paddress,atown,scountry,email,mnumber,nationality,sorigin,lga,sexam,etown){
+this.surname=sname,
+this.middlename =mname,
+this.firstname =fname,
+this.dateofbirth = dob,
+this.sx = sex,
+this.dis = disa,
+this.mar =mstatus,
+this.address  = paddress,
+this.town = atown,
+this.scount = scountry,
+this.ema = email,
+this.num = mnumber,
+this.nation = nationality,
+this.sor = sorigin,
+this.lg =lga,
+this.exam =sexam,
+this.etow = etown
+
+this.registrationform = function(){
+    return(`Hellow ${this.surname} ${this.middlename} ${this.firstname} 
+    ${this.dateofbirth} ${this.sx} ${this.dis} ${this.mar} ${this.address}
+    ${this.town} ${this.scount} ${this.ema} ${this.num} ${this.nation} 
+    ${this.sor} ${this.lg} ${this.exam} ${this.etow}
+    `)
+}
+
+}
+let reg = new formReg();
+console.log(reg.registrationform())
+
+
+
+document.getElementById("sub").addEventListener('click',function(){
+
+    let sur = getElementById("sname").value;
+    let mid = getElementById("mname").value;
+    let fir = getElementById("fname").value;
+    let dat = getElementById("dob").value;
+    let xs = getElementById("sex").value;
+    let dim = getElementById("disa").value;
+    let mst = getElementById("mstatus").value;
+    let addre = getElementById("paddress").value;
+    let tow = getElementById("atown").value;
+    let scoun = getElementById("scountry").value;
+    let emai = getElementById("email").value;
+    let mnum = getElementById("mnumber").value;
+    let nat = getElementById("nationality").value;
+    let sori = getElementById("sorigin").value;
+    let ga = getElementById("lga").value;
+    let sexa = getElementById("sexam").value;
+    let etom = getElementById("etown").value;
+
+    let reg = new formReg(sur,mid,fir,dat,xs,dim,mst,addre,tow,scoun,emai,mnum,nat,sori,ga,sexa,etom);
+    document.getElementById("info").innerHTML+=reg.registrationform();
+
+});
+
+
+
+    </script>
+</body>
+</html>
